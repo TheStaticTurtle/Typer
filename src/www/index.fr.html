@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Typer</title>
+
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap2-toggle.min.css" >
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link href="font/Raleway.css" rel="stylesheet">
+
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/bootstrap2-toggle.min.js"></script>
+		<script src="js/main.js"></script>
+	</head>
+	<body class="body">
+		<div class="mainContainer background-gradient">
+			<div class="header">
+				<div id="background" class="bg"></div>
+				<a class="logo onfront" href="/">
+					<svg><image xlink:href="img/typewriter.svg"/></svg>
+					<div class="logo-text">Typer</div>
+				</a>
+
+				<ul class="languagepicker roundborders onfront">
+					<a href="/fr"><li><svg><image xlink:href="img/fr.svg"/></svg>Francais</li></a>
+					<a href="/en"><li><svg><image xlink:href="img/us.svg"/></svg>English</li></a>
+				</ul>
+			</div>
+
+			<div id="content" class="content ">
+				<div class="explaination">
+					<span class="explaination_title"><div class="typewriter"><div class="typewriter-text">Typer, Voyer comme vous ecrivez</div></div></span><br>
+					<div class="explaination_text">Typer, affiche des mots que vous devez re-ecrire dans une case floutée pour faire en sorte que vous ne voyez pas les erreurs. L'idee est que vous devez ecrire <b>sans</b> regarder le clavier, apres un certaint temps vous pouvez ameliorer vos competences d'ecriture. Fini de lire? Testez vos competence maintenant: </div><br>
+					<form class="play_form">
+						<p class="play_text"> Difficulte: &nbsp</p>
+						<select class="btn btn-outline-dark play_btn play_btn_spacer">
+							<option disabled value="easy">Facile</option>
+							<option value="medium">Normale</option>
+							<option disabled value="hard">Difficile</option>
+						</select>
+						<button type="button" onclick="goToPlayZone()" class="btn btn-outline-dark play_btn">Demmarer le test</button>
+					</form>
+				</div>
+			</div>
+
+			<div id="playzone" class="playzone hidden">
+				<div class="playzone_wordlist">
+					<p class="playzone_wordlist_title">Texte: </p>
+					<div id="playzone_words" class="playzone_words">
+						<span class="playzone_word_current">TROLOLOLO</span>
+						<span class="playzone_word_next">LOLO</span>
+						<span class="playzone_word_next">LOLO</span>
+					</div>
+				</div>
+				<div class="playzone_wordwrinting">
+					<p class="playzone_wordlist_title">Ecrivez en dessous:</p>
+
+					<input type="checkbox" id="playzone_wordlist_input_backscape" > Desactiver la touche effacer</input>
+					<input type="text" id="playzone_wordlist_input" class="form-control playzone_input bluredAF" onkeypress="keypress(event)" onkeydown="keydown(event)">
+					<p>Phrase <span id="playzone_phrasecount">1/15</span></p>
+				</div>
+			</div>
+
+			<div id="results" class="results hidden">
+				<span class="explaination_title"><div class="typewriter"><div class="typewriter-text">Resultats:</div></div></span><br>
+				<p>Precision: <span id="results_accu">100%</p>
+				<span class="results_correct">Mot de correction → Votre mot</span><br>
+				<div id="results_div">
+					<p>WordA → VTeee</p>
+				</div>
+			</div>
+
+			<div class="footer_text">
+				<p>Cree par TurtleForGaming. <a href="/credits">Credits</a></p>
+			</div>
+		</div>
+	</body>
+</html>

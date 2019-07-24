@@ -1,0 +1,1 @@
+docker build -t keyboard_learner:latest .

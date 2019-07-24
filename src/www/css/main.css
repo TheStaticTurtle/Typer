@@ -1,0 +1,65 @@
+.body {margin:0; font-family: 'Raleway', sans-serif; font-weight: 300; }
+.mainContainer {height: 100vh; }
+
+.header {/*background-color: #FFFFFF;*/ display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; height: 15%; }
+.background-gradient {background-image: linear-gradient(to right top, #86d16b, #8dd570, #95d975, #9cdd7a, #a3e17f, #a1e07d, #9fe07c, #9ddf7a, #91d971, #85d368, #78ce60, #6ac857); background-repeat: no-repeat; background }
+.bg {position:absolute; top:0; left:0; width: 100%; height: 15%; background-color:#000; opacity: 0.1; filter: blur(3px); pointer-events: none; z-index: 0; }
+.onfront {z-index: 99; }
+.logo { text-decoration: none; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; height: 100%; }
+.logo svg {height: 90%; display: inline-block; width: 10vw; }
+.logo img {height: 90%; display: inline-block; width: 10vw; }
+.logo image {height: 90%; display: inline-block; width: 10vw; }
+.logo-text {margin-left: 10%; display: inline-block; font-size: 5vh; position: relative; letter-spacing: 0.07em; vertical-align: middle; color: white; font-weight: 400; }
+.logo:link {color: transparent; }
+.logo:visited {color: transparent; }
+.logo:hover {color: transparent; }
+.logo:active { color: transparent; }
+
+.languagepicker {background-color: #FFF; display: inline-block; padding: 0; height: 40px; overflow: hidden; transition: all .3s ease; margin: 0 50px 10px 0; vertical-align: top; float: left; }
+.languagepicker:hover {height: 81px; }
+.languagepicker a{color: #000; text-decoration: none; }
+.languagepicker li {display: block; padding: 0px 20px; line-height: 40px; border-top: 1px solid #EEE; }
+.languagepicker li:hover{background-color: #EEE; }
+.languagepicker a:first-child li {border: none; background: #FFF !important; }
+.languagepicker li {margin-right: 5px; }
+.languagepicker svg {margin-right: 5px; height: 2vh; width: 2vh; }
+.languagepicker image {margin-right: 5px; height: 2vh; width: 2vh; }
+.roundborders {border-radius: 5px; }
+.large:hover {height: 245px; }
+
+.typewriter {display: inline-block;}
+.typewriter-text {display: inline-block; overflow: hidden; letter-spacing: 2px; animation: typing 1s steps(35, end), blink 0.75s step-end infinite; white-space: nowrap; border-right: 4px solid orange; box-sizing: border-box; }
+@keyframes typing {from {  width: 0% } to {width: 100% } }
+@keyframes blink {from, to {border-color: transparent } 50% {border-color: green; } }
+
+.hidden {visibility: hidden; }
+
+.content { position: absolute; top: 15%; height: 85%; width: 100%;}
+.explaination_div {position: absolute; top: 15%; height: 85%; width: 100%; }
+.explaination {position: absolute; top: 30%; left: 50%; transform: translate(-50%, -50%); }
+.explaination_text {font-size: 2.5vh; color: white; transform: translate(10%, 0); width: 70%; }
+.explaination_title {font-size: 5vh; color: white; }
+.play_form {transform: translate(15%, 0);}
+.play_text { display: inline-block; font-size: 2.5vh; }
+.play_btn {font-size: 2.5vh; height: 6vh; width: 13vw; }
+.play_btn_spacer { margin-right: 1vw; }
+
+.playzone {position: absolute; top: 20%; left: 50%; transform: translate(-50%,0); width: 50%; }
+.playzone_wordlist {margin-top: 2%; width: 100%; background-color: #EEE; padding: 2%; border-radius: 25px; }
+.playzone_wordwrinting {margin-top: 3%; width: 100%; background-color: #EEE; padding: 2%; border-radius: 25px; }
+.playzone_wordlist_title {font-size: 4vh; color: #000; }
+.playzone_input {color: transparent; }
+.playzone_word_done { font-size: 3vh; font-weight: bold; color: #5e8c4d; }
+.playzone_word_current { font-size: 3vh; font-weight: bold; color: #d4783b; }
+.playzone_word_next { font-size: 3vh; font-weight: bold; color: #000000; }
+
+.results {position: absolute; top: 20%; left: 50%; transform: translate(-50%,0); width: 50%; }
+#results_div { overflow-y: scroll; max-height:50vh; }
+.results_correct { font-weight: bold; }
+.results_incorrect { font-weight: bold; color: #e06161; }
+
+.bluredAF {text-shadow: 0 0 5px rgba(0,0,0,0.5); }
+.bluredAF:focus {filter: blur(5px); }
+
+.footer_text {position: absolute; bottom: 0vh; right: 0; padding: 0; font-size: 2.5vh; height: 3.5vh; overflow-y: hidden; }
+.footer_text p{padding: 0; }
